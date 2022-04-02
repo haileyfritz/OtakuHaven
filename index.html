@@ -1,42 +1,256 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="style.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  </head>
-  <body>
 
-  <nav>
-    <div class="blue nav-wrapper">
-      <a href="#!" class="brand-logo">Materialze App</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a class="active" href="index.html">Home</a></li>
-      </ul>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class = "navbar">
+      <div>
+        <img id = "logo" src = "logo2.jpeg">
+      </div>
+
+      <div class="search-box">
+        <input type = "search" name = "Search" id = "search-movie" placeholder = "Search">
+        <i class='bx bx-search'></i>
+      </div>
     </div>
-  </nav>
 
-  <ul class="sidenav" id="mobile-demo">
-    <li><a class="active" href="index.html">Home</a></li>
-  </ul>
+  <section id = "user">
+    <span id = "category">
+      <a href = "#Popular-anime">Popular</a>
 
-    <main>
-      <h1>My App</h1>
-    </main>
+      <a href = "#New-anime">New</a>
 
-    <script>
-      //Initialize Materialize components here
-      document.addEventListener('DOMContentLoaded', function() {
+      <a href = "#Old-School-anime">Old-School</a>
+    </span>
 
-        const navs = M.Sidenav.init(document.querySelectorAll('.sidenav'));
+    <span id = "genre-year">
+      Genre
+      <select name = "genre" class = "genre">
+        <option value = "All genres">All genres</option>
+        <option value = "Action">Action</option>
+        <option value = "Adventure">Adventure</option>
+        <option value = "Comedy">Comedy</option>
+        <option value = "Horror">Horror</option>
+      </select>
+  
+      Year
+      <select name = "year" class = "year">
+        <option value = "All years">All years</option>
+        <option value = "2020-2022">2020-2022</option>
+        <option value = "2015-2019">2015-2019</option>
+        <option value = "2010-2014">2010-2014</option>
+        <option value = "2005-2009">2005-2009</option>
+        <option value = "2000-2004">2000-2004</option>
+        <option value = "pre-2000">pre-2000</option>
+      </select>
+    </span>
+    
+  </section>
 
-      });
-    </script>
-    <script src="script.js"></script>
-  </body>
+  <section id = "banner">
+    <img src = "https://th.bing.com/th/id/OIP.A5eruoydM4eQF84bF4DUcgHaFj?pid=ImgDet&rs=1" class = "anime-img">
+  </section>
+  
+  <!--Popular anime section-->
+  <section id = "Popular-anime">
+      <div class = "title">
+        <h2>Popular</h2>
+      </div>
+
+      <!--Anime cards(need to remove)-->
+      <div class = "content">
+        <span class = "anime-card">
+          <h3>Attack on Titan</h3>
+          <div>
+            <img src = "https://th.bing.com/th/id/OIP.A5eruoydM4eQF84bF4DUcgHaFj?pid=ImgDet&rs=1" class = "anime-img">
+          </div>
+          <span>Action</span>
+          <span>2013</span>
+        </span>
+
+        <span class = "anime-card">
+          <h3>Attack on Titan</h3>
+          <div>
+            <img src = "https://th.bing.com/th/id/OIP.A5eruoydM4eQF84bF4DUcgHaFj?pid=ImgDet&rs=1" class = "anime-img">
+          </div>
+          <span>Action</span>
+          <span>2013</span>
+        </span>
+
+        <span class = "anime-card">
+          <h3>Attack on Titan</h3>
+          <div>
+            <img src = "https://th.bing.com/th/id/OIP.A5eruoydM4eQF84bF4DUcgHaFj?pid=ImgDet&rs=1" class = "anime-img">
+          </div>
+          <span>Action</span>
+          <span>2013</span>
+        </span>
+
+        <span class = "anime-card">
+          <h3>Attack on Titan</h3>
+          <div>
+            <img src = "https://th.bing.com/th/id/OIP.A5eruoydM4eQF84bF4DUcgHaFj?pid=ImgDet&rs=1" class = "anime-img">
+          </div>
+          <span>Action</span>
+          <span>2013</span>
+        </span>
+
+        <span class = "anime-card">
+          <h3>Attack on Titan</h3>
+          <div>
+            <img src = "https://th.bing.com/th/id/OIP.A5eruoydM4eQF84bF4DUcgHaFj?pid=ImgDet&rs=1" class = "anime-img">
+          </div>
+          <span>Action</span>
+          <span>2013</span>
+        </span>
+
+        <span class = "anime-card">
+          <h3>Attack on Titan</h3>
+          <div>
+            <img src = "https://th.bing.com/th/id/OIP.A5eruoydM4eQF84bF4DUcgHaFj?pid=ImgDet&rs=1" class = "anime-img">
+          </div>
+          <span>Action</span>
+          <span>2013</span>
+        </span>
+      </div>
+    </section>
+
+    <!--New anime section-->
+    <section id = "New-anime">
+      <div class = "title">
+        <h2>New</h2>
+      </div>
+
+      <!--Anime cards(need to remove)-->
+      <div class = "content">
+        <span class = "anime-card">
+          <h3>Attack on Titan</h3>
+          <div>
+            <img src = "https://th.bing.com/th/id/OIP.A5eruoydM4eQF84bF4DUcgHaFj?pid=ImgDet&rs=1" class = "anime-img">
+          </div>
+          <span>Action</span>
+          <span>2013</span>
+        </span>
+
+        <span class = "anime-card">
+          <h3>Attack on Titan</h3>
+          <div>
+            <img src = "https://th.bing.com/th/id/OIP.A5eruoydM4eQF84bF4DUcgHaFj?pid=ImgDet&rs=1" class = "anime-img">
+          </div>
+          <span>Action</span>
+          <span>2013</span>
+        </span>
+
+        <span class = "anime-card">
+          <h3>Attack on Titan</h3>
+          <div>
+            <img src = "https://th.bing.com/th/id/OIP.A5eruoydM4eQF84bF4DUcgHaFj?pid=ImgDet&rs=1" class = "anime-img">
+          </div>
+          <span>Action</span>
+          <span>2013</span>
+        </span>
+
+        <span class = "anime-card">
+          <h3>Attack on Titan</h3>
+          <div>
+            <img src = "https://th.bing.com/th/id/OIP.A5eruoydM4eQF84bF4DUcgHaFj?pid=ImgDet&rs=1" class = "anime-img">
+          </div>
+          <span>Action</span>
+          <span>2013</span>
+        </span>
+
+        <span class = "anime-card">
+          <h3>Attack on Titan</h3>
+          <div>
+            <img src = "https://th.bing.com/th/id/OIP.A5eruoydM4eQF84bF4DUcgHaFj?pid=ImgDet&rs=1" class = "anime-img">
+          </div>
+          <span>Action</span>
+          <span>2013</span>
+        </span>
+
+        <span class = "anime-card">
+          <h3>Attack on Titan</h3>
+          <div>
+            <img src = "https://th.bing.com/th/id/OIP.A5eruoydM4eQF84bF4DUcgHaFj?pid=ImgDet&rs=1" class = "anime-img">
+          </div>
+          <span>Action</span>
+          <span>2013</span>
+        </span>
+      </div>
+    </section>
+
+    <!--Old-school anime section-->
+    <section id = "Old-School-anime">
+      <div class = "title">
+        <h2>Old-School</h2>
+      </div>
+
+      <!--Anime cards(need to remove)-->
+      <div class = "content">
+        <span class = "anime-card">
+          <h3>Attack on Titan</h3>
+          <div>
+            <img src = "https://th.bing.com/th/id/OIP.A5eruoydM4eQF84bF4DUcgHaFj?pid=ImgDet&rs=1" class = "anime-img">
+          </div>
+          <span>Action</span>
+          <span>2013</span>
+        </span>
+
+        <span class = "anime-card">
+          <h3>Attack on Titan</h3>
+          <div>
+            <img src = "https://th.bing.com/th/id/OIP.A5eruoydM4eQF84bF4DUcgHaFj?pid=ImgDet&rs=1" class = "anime-img">
+          </div>
+          <span>Action</span>
+          <span>2013</span>
+        </span>
+
+        <span class = "anime-card">
+          <h3>Attack on Titan</h3>
+          <div>
+            <img src = "https://th.bing.com/th/id/OIP.A5eruoydM4eQF84bF4DUcgHaFj?pid=ImgDet&rs=1" class = "anime-img">
+          </div>
+          <span>Action</span>
+          <span>2013</span>
+        </span>
+
+        <span class = "anime-card">
+          <h3>Attack on Titan</h3>
+          <div>
+            <img src = "https://th.bing.com/th/id/OIP.A5eruoydM4eQF84bF4DUcgHaFj?pid=ImgDet&rs=1" class = "anime-img">
+          </div>
+          <span>Action</span>
+          <span>2013</span>
+        </span>
+
+        <span class = "anime-card">
+          <h3>Attack on Titan</h3>
+          <div>
+            <img src = "https://th.bing.com/th/id/OIP.A5eruoydM4eQF84bF4DUcgHaFj?pid=ImgDet&rs=1" class = "anime-img">
+          </div>
+          <span>Action</span>
+          <span>2013</span>
+        </span>
+
+        <span class = "anime-card">
+          <h3>Attack on Titan</h3>
+          <div>
+            <img src = "https://th.bing.com/th/id/OIP.A5eruoydM4eQF84bF4DUcgHaFj?pid=ImgDet&rs=1" class = "anime-img">
+          </div>
+          <span>Action</span>
+          <span>2013</span>
+        </span>
+      </div>
+    </section>
+  
+  <script src="script.js"></script>
+</body>
+
 </html>
