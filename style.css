@@ -1,0 +1,109 @@
+body {
+    background: #ffcc80;
+}
+
+.navbar {
+    display: flex;
+    margin-top: 5px;
+    height: 75px;
+    width: 100%;
+    background: #ff5722;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+#logo {
+    width: 150px;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+#site-name {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #212121;
+    padding: 10px;
+}
+
+#home {
+    display: flex;
+    font-size: 1.5rem;
+    color: #212121;
+    padding: 10px;
+}
+
+.search-box {
+    margin: auto;
+    background: #ffcc80;
+    width: 100px;
+    padding: 5px;
+    column-gap: 0.5em;
+    border-radius: 2em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.search-box .bx:hover {
+    color: #455a64;
+}
+
+.search-box .bx {
+    font-size: 0.75em;
+    margin: 0.125em;
+}
+
+#search-movie {
+    background: #ff5722;
+    width: 50px;
+    font-size: 0.5em;
+    text-align: center;
+}
+
+.genre {
+    background:  #ffcc80;
+    width: 100px;
+    height: 20px;
+}
+
+.year {
+    background:  #ffcc80;
+    width: 100px;
+    height: 20px;
+}
+
+#user {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    column-gap: 5rem;
+    background: #ff8a65;
+    padding : 10px;
+    border-radius: 10px;
+    justify-content: left;
+}
+
+#banner {
+    width: 100%;
+    height: 50%;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    margin-bottom: 60px;
+}
+
+.anime-card {
+    background-color: #ff7043;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.anime-img {
+    width: 100%;
+}
+
+h3 {
+    text-align: center;
+}
