@@ -28,6 +28,7 @@ function displayPopular(obj){
         obj2.innerHTML = html;
 
 }
+loadPopular();
 
 async function loadGenres(){
   try{
