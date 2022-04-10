@@ -12,113 +12,123 @@
   </head>
   
   <body>
-
-  <nav>
-    <div class="black nav-wrapper">
-      <a href="#!" class="brand-logo"></a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <div class="nav-wrapper">
-        <ul class="right hide-on-med-and-down">
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a class="active" href="genre.html" onclick="loadGenres()">Genre</a></li>
-        </ul>
-
+    
+    <nav>
       <span id = "title">
         <img id = "logo" src = "logo.jpeg">
-        <span id = "search-bar">
-          <input type = "search" value = "" onclick="openpage()" name = "movie" id = "search-movie" placeholder = "Search">
-          <a class="search" id = "search-button" href = "#">
+      </span>
+
+      <span id = "search-bar">
+          <input type = "text" name = "movie" id = "search-movie" placeholder = "Search">
+          <a class = "search" id = "search-button" value = "" href = "#" onclick = searchAnime()>
             <i class='bx bx-search'></i>
           </a>
         </span>
-      </span>
-      </div>
-    </div>
 
-    <ul class="sidenav" id="mobile-demo">
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a class = "active" href = "genre.html">Genre</a></li>
-    </ul>
-  </nav>
-    
+      <span><a class="active" href="#home-page" onclick = "displayHomePage()">Home</a></span>
+      <span><a class = "active" href = "#genre-page" onclick = "loadGenrePage()">Genre</a></span>
+    </nav>
+
     
   <main>
-    <section id = "banner">
-      <img src = "banner.png" class = "anime-img">
-    </section>
+    <section id = "home-page">
+      <section id = "banner">
+         <img src = "banner.png" class = "anime-img">
+      </section>
+        
+      <section id = "jump-links">
+        <span>
+           <a href = "#Popular-anime">Popular</a>
+        </span>
+        <span>
+          <a href = "#New-anime">New</a>
+        </span>
+        <span>
+          <a href = "#Old-School-anime">Old-School</a>
+        </span>
+      </section>
+          
+      <section id = "Popular-anime">
+        <div class = "title">
+          <a href = "#anime-list" onclick = "displayGenrePage('Popular')">
+            <h3>Popular</h3>
+          </a>
+        </div>
+        <div class = "popular-content"></div>
+      </section>
     
-    <section id = "jump-links">
-      <span>
-        <a href = "#Popular-anime">Popular</a>
-      </span>
-      <span>
-        <a href = "#New-anime">New</a>
-      </span>
-      <span>
-        <a href = "#Old-School-anime">Old-School</a>
-      </span>
+      <section id = "New-anime">
+        <div class = "title">
+          <a href = "#anime-list" onclick = "displayGenrePage('New')">
+            <h3>New</h3>
+          </a>
+        </div>
+        <div class = "new-content"></div>
+      </section>
+    
+      <section id = "Old-School-anime">
+        <div class = "title">
+          <a href = "#anime-list" onclick = "displayGenrePage('Old School')">
+            <h3>Old School</h3>
+          </a>
+        </div>
+        <div class = "old-school-content"></div>
+      </section>
     </section>
+
+    <section id = "genre-page">
+       <div class = "genre-select">
+            <span>
+                <a href = "#anime-list" onclick = "displayGenrePage('Popular')">Popular</a>
+            </span>
+            <span>
+                <a href = "#anime-list" onclick = "displayGenrePage('New')">New</a>
+            </span>
+            <span>
+                <a href = "#anime-list" onclick = "displayGenrePage('Old-School')">Old School</a>
+            </span>
+            <span>
+                <a href = "#anime-list" onclick = "displayGenrePage('Action')">Action</a>
+            </span>
+            <span>
+                <a href = "#anime-list" onclick = "displayGenrePage('Adventure')">Adventure</a>
+            </span>
+            <span>
+                <a href = "#anime-list" onclick = "displayGenrePage('Comedy')">Comedy</a>
+            </span>
+            <span>
+                <a href = "#anime-list" onclick = "displayGenrePage('Drama')">Drama</a>
+            </span>
+            <span>
+                <a href = "#anime-list" onclick = "displayGenrePage('Fantasy')">Fantasy</a>
+            </span>
+            <span>
+                <a href = "#anime-list" onclick = "displayGenrePage('Mystery')">Mystery</a>
+            </span>
+            <span>
+                <a href = "#anime-list" onclick = "displayGenrePage('Romance')">Romance</a>
+            </span>
+            <span>
+                <a href = "#anime-list" onclick = "displayGenrePage('Sci-Fi')">Sci-Fi</a>
+            </span>
+            <span>
+                <a href = "#anime-list" onclick = "displayGenrePage('Slice of Life')">Slice of Life</a>
+            </span>
+            <span>
+                <a href = "#anime-list" onclick = "displayGenrePage('Supernatural')">Supernatural</a>
+            </span>
+            <span>
+                <a href = "#anime-list" onclick = "displayGenrePage('Suspense')">Suspense</a>
+            </span>
+        </div>
+
+        <div id = "anime-list">
+          
+        </div>
+    </section>
+
+    <section id = "description">
       
-  <!--Popular anime section-->
-  <section id = "Popular-anime">
-      <a class = "title" href = "list.html">
-        <h3>Popular</h3>
-      </a>
-
-      <!--Anime cards(template)-->
-      <div class = "content" id = "popular-div">
-        <span class = "anime-card" id = "popular-span">
-          <a href = "description.html">
-          <h4>Attack on Titan</h4>
-          <div>
-            <img src = "https://th.bing.com/th/id/OIP.A5eruoydM4eQF84bF4DUcgHaFj?pid=ImgDet&rs=1" class = "anime-img">
-          </div>
-          <span>Action</span>
-          <span>2013</span>
-        </a>
-        </span>
-      </div>
-     
-    </section>
-
-    <!--New anime section-->
-    <section id = "New-anime">
-      <div class = "title">
-        <h2>New</h2>
-      </div>
-
-      <!--Anime cards(need to remove)-->
-      <div class = "content">
-        <span class = "anime-card">
-          <h3>Attack on Titan</h3>
-          <div>
-            <img src = "https://th.bing.com/th/id/OIP.A5eruoydM4eQF84bF4DUcgHaFj?pid=ImgDet&rs=1" class = "anime-img">
-          </div>
-          <span>Action</span>
-          <span>2013</span>
-        </span>
-
-        </div>
-    </section>
-
-    <!--Old-school anime section-->
-    <section id = "Old-School-anime">
-      <div class = "title">
-        <h2>Old-School</h2>
-      </div>
-
-      <!--Anime cards(need to remove)-->
-      <div class = "content">
-        <span class = "anime-card">
-          <h3>Attack on Titan</h3>
-          <div>
-            <img src = "https://th.bing.com/th/id/OIP.A5eruoydM4eQF84bF4DUcgHaFj?pid=ImgDet&rs=1" class = "anime-img">
-          </div>
-          <span>Action</span>
-          <span>2013</span>
-        </span>
-
-        </div>
     </section>
     </main>
 
@@ -130,8 +140,6 @@
 
       });
     </script>
-
-    <script src="default.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
